@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 import './globals.css';
-import { WhatsFab } from '@/components/WhatsFab';
 
 const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
@@ -47,7 +46,6 @@ export default function RootLayout({
       <body style={{ fontFamily: 'var(--font-sans), -apple-system, BlinkMacSystemFont, system-ui, sans-serif' }}>
         <div className="app">
           {children}
-          <WhatsFab />
         </div>
       </body>
     </html>
