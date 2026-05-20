@@ -29,20 +29,11 @@ export const metadata: Metadata = {
     siteName: 'Welcome Suites',
     locale: 'es_AR',
     type: 'website',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Welcome Suites Las Varillas',
-      },
-    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Welcome Suites · Guía digital',
     description: 'Todo lo que necesitás durante tu estadía, a un toque.',
-    images: ['/og-image.jpg'],
   },
 };
 
