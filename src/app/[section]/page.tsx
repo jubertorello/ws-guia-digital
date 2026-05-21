@@ -12,7 +12,6 @@ import { UbicacionScreen }   from '@/components/screens/UbicacionScreen';
 import { ReglamentoScreen }  from '@/components/screens/ReglamentoScreen';
 import { DesayunoScreen }    from '@/components/screens/DesayunoScreen';
 import { ComerScreen }       from '@/components/screens/ComerScreen';
-import { CafeteriasScreen }  from '@/components/screens/CafeteriasScreen';
 import { BaresScreen }       from '@/components/screens/BaresScreen';
 import { HacerScreen }       from '@/components/screens/HacerScreen';
 import { EmergenciasScreen } from '@/components/screens/EmergenciasScreen';
@@ -27,7 +26,6 @@ const SCREENS: Record<string, React.ComponentType> = {
   reglamento:  ReglamentoScreen,
   desayuno:    DesayunoScreen,
   comer:       ComerScreen,
-  cafeterias:  CafeteriasScreen,
   bares:       BaresScreen,
   hacer:       HacerScreen,
   emergencias: EmergenciasScreen,
