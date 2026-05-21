@@ -1,4 +1,6 @@
+import { Ic } from '@/lib/icons';
 import { Lede, Card, Place, SectionBlock } from '@/components/ui/blocks';
+import { Action } from '@/components/ui/interactive';
 
 export function CafeteriasScreen() {
   return (
@@ -6,10 +8,19 @@ export function CafeteriasScreen() {
       <Lede>Para arrancar el día sin apuro o hacer una pausa a media tarde.</Lede>
       <SectionBlock title="Nuestras favoritas">
         <Card>
-          <Place name="Café del Centro" tag="Especialidad · tostadas" note="Café de filtro y medialunas recién hechas. Wi-Fi para trabajar." dist="3 cuadras" />
-          <Place name="Almacén & Café" tag="Brunch · sin TACC" note="Opciones veganas y sin gluten. Ideal sábado al mediodía." dist="4 cuadras" />
-          <Place name="Donatella" tag="Pastelería" note="Tortas finas, alfajores artesanales. Para llevar." dist="6 cuadras" />
+          <Place name="Café del Centro" tag="Especialidad · tostadas" />
         </Card>
+        <Action href="https://maps.google.com/?q=Cafe+del+Centro+Las+Varillas" icon={Ic.pin} label="Ver Café del Centro en Maps" accent />
+
+        <Card>
+          <Place name="Almacén & Café" tag="Brunch · sin TACC" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Almacen+y+Cafe+Las+Varillas" icon={Ic.pin} label="Ver Almacén & Café en Maps" accent />
+
+        <Card>
+          <Place name="Donatella" tag="Pastelería" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Donatella+Las+Varillas" icon={Ic.pin} label="Ver Donatella en Maps" accent />
       </SectionBlock>
     </>
   );

@@ -16,14 +16,8 @@ export function ReglamentoScreen() {
         <Bullets items={[
           'Al salir, dejá las luces y el aire apagados.',
           'Si rompés algo, avisanos — no pasa nada, lo resolvemos juntos.',
-          'Las toallas blancas son para el baño, las de color para la pileta o el patio.',
-        ]} />
-      </SectionBlock>
-      <SectionBlock title="Seguridad">
-        <Bullets items={[
-          'Cerrá siempre la puerta principal al entrar y salir.',
-          'Guardá objetos de valor en la caja fuerte del placard.',
-          'En caso de emergencia, seguí las indicaciones del cartel detrás de la puerta.',
+          'Las toallas blancas son para el baño, las alfombras de color son para los pies.',
+          'Cerrá siempre la puerta principal al entrar y salir.'
         ]} />
       </SectionBlock>
     </>

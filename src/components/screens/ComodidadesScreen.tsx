@@ -1,14 +1,13 @@
 import { Lede, Card, SectionBlock } from '@/components/ui/blocks';
 
 const items: [string, string][] = [
-  ['Cocina equipada', 'Heladera, anafe, microondas, vajilla completa y utensilios.'],
-  ['Aire y calefacción', 'Climatización individual en cada ambiente.'],
-  ['Smart TV', 'Con acceso a Netflix, YouTube y apps de streaming.'],
-  ['Ropa de cama y toallas', 'Repuesto adicional en el placard del dormitorio.'],
-  ['Lavarropas', 'Disponible en el apart — consultá por el detergente.'],
-  ['Secador de pelo', 'En el baño, dentro del cajón inferior.'],
+  ['Cocina equipada', 'Heladera, cocina, microondas, vajilla y utensillos, pava eléctrica.'],
+  ['Aire y calefacción', 'AA frío/calor en dormitorio, estufa y ventilador en comedor.'],
+  ['Smart TV', 'Flow con acceso a canales, Netflix, YouTube y apps de streaming.'],
+  ['Ropa de cama y toallas', 'Almohadas inteligentes y de vellón.'],
+  ['Secador de pelo', 'Solicitar en recepción.'],
   ['Estacionamiento', 'Cubierto, sin cargo, por orden de llegada.'],
-  ['Limpieza', 'Servicio cada 3 días en estadías largas. Pedilo si lo necesitás antes.'],
+  ['Limpieza', 'Servicio cada 3 días en estadías largas, solicitar si lo necesitan antes.'],
 ];
 
 export function ComodidadesScreen() {

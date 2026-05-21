@@ -1,5 +1,5 @@
 import { Ic } from '@/lib/icons';
-import { Lede, Card, Row, SectionBlock } from '@/components/ui/blocks';
+import { Lede, Card, SectionBlock } from '@/components/ui/blocks';
 import { Action } from '@/components/ui/interactive';
 
 export function UbicacionScreen() {
@@ -19,14 +19,6 @@ export function UbicacionScreen() {
           </div>
         </Card>
         <Action href="https://maps.google.com/?q=Welcome+Suites+Las+Varillas+Cordoba" icon={Ic.pin} label="Abrir en Google Maps" sub="Cómo llegar caminando o en auto" accent />
-      </SectionBlock>
-      <SectionBlock title="Cerca tuyo">
-        <Card>
-          <Row label="Plaza central" value="3 cuadras" />
-          <Row label="Supermercado más cercano" value="2 cuadras" />
-          <Row label="Terminal de ómnibus" value="8 cuadras" />
-          <Row label="Farmacia 24 h" value="4 cuadras" />
-        </Card>
       </SectionBlock>
     </>
   );

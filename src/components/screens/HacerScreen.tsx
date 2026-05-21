@@ -1,4 +1,6 @@
+import { Ic } from '@/lib/icons';
 import { Lede, Card, Place, SectionBlock } from '@/components/ui/blocks';
+import { Action } from '@/components/ui/interactive';
 
 export function HacerScreen() {
   return (
@@ -6,16 +8,28 @@ export function HacerScreen() {
       <Lede>Las Varillas tiene un ritmo propio: pueblo de campo, cerca del verde y con historia. Algunas ideas para tus días acá.</Lede>
       <SectionBlock title="Imperdibles">
         <Card>
-          <Place name="Casco histórico" tag="Caminata · 1 h" note="Recorrido por la plaza, la iglesia y los edificios de fines del 1800." dist="centro" />
-          <Place name="Museo Histórico Municipal" tag="Cultura" note="Pequeño pero muy bien curado. Entrada libre, abre tarde." dist="5 cuadras" />
-          <Place name="Laguna Mar Chiquita" tag="Paseo · día completo" note="Una hora y media en auto. Reserva natural impresionante." dist="auto" />
+          <Place name="Plaza San Martín" tag="Cultura" note="Recorrido por la plaza y la iglesia." />
         </Card>
+        <Action href="https://maps.app.goo.gl/zF9efBYoWzHU2F597" icon={Ic.pin} label="Ver Plaza San Martín en Maps" accent />
+        <Card>
+          <Place name="Cine Teatro Colón" tag="Cultura" note="Inaugurado en 1923, es el mayor centro cultural de la ciudad y sede de importante espectáculos teatrales y artisticos." />
+        </Card>
+        <Action href="https://maps.app.goo.gl/1d8n18P4fkijRZnq7" icon={Ic.pin} label="Ver Teatro Colón en Maps" accent />
+        <Card>
+          <Place name="Observatorio astronómico de GMZ" tag="Ciencia" note="Entrada libre, abre tarde." />
+        </Card>
+        <Action href="https://maps.app.goo.gl/aVZ68LsSaDfFsUKeA" icon={Ic.pin} label="Ver Observatorio en Maps" accent />
       </SectionBlock>
       <SectionBlock title="Para aire libre">
         <Card>
-          <Place name="Parque del Bicentenario" tag="Caminar · correr" note="Pista de tierra, sombra y juegos para chicos." dist="10 cuadras" />
-          <Place name="Estancia Las Acacias" tag="Día de campo" note="Almuerzo, cabalgata y pileta. Pedinos el contacto para reservar." dist="auto" />
+          <Place name="Centro Cívico" tag="Caminar · correr" note="Paseo para correr/caminar, zonas verdes." />
         </Card>
+        <Action href="https://maps.app.goo.gl/pNruXPzZr7GXf19X7" icon={Ic.pin} label="Ver Centro Cívico en Maps" accent />
+
+        <Card>
+          <Place name="Parque de la familia" tag="Caminar · correr" note="Tomar mates, pasar el día, picnic, juegos para niños, pista de Skate." />
+        </Card>
+        <Action href="https://maps.app.goo.gl/gbvKFJUAvovhXpSs7" icon={Ic.pin} label="Ver Parque de la familia en Maps" accent />
       </SectionBlock>
     </>
   );
