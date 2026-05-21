@@ -31,6 +31,12 @@ export function HacerScreen() {
         </Card>
         <Action href="https://maps.app.goo.gl/gbvKFJUAvovhXpSs7" icon={Ic.pin} label="Ver Parque de la familia en Maps" accent />
       </SectionBlock>
+      <SectionBlock title="Eventos y cultura">
+        <div style={{ padding: '0 0 1rem 0', color: 'var(--text-soft)', fontSize: '0.95rem' }}>
+          Para próximos eventos culturales y artísticos, te recomendamos seguir a la Dirección de Cultura:
+        </div>
+        <Action href="https://www.instagram.com/dirculturalasvarillas?igsh=MWdiNHR1YnJiazFqOA==" icon={Ic.activity} label="Ver Instagram" sub="@dirculturalasvarillas" accent />
+      </SectionBlock>
     </>
   );
 }
