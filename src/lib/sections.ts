@@ -20,10 +20,10 @@ export interface SectionMeta {
 }
 
 export const SECTIONS: SectionMeta[] = [
+  { id: 'info',        label: 'info importante',  icon: 'alert' },
   { id: 'contacto',    label: 'contacto',        icon: 'phone' },
   { id: 'wifi',        label: 'wifi',             icon: 'wifi' },
   { id: 'comodidades', label: 'comodidades',      icon: 'amenities' },
-  { id: 'info',        label: 'info importante',  icon: 'alert' },
   { id: 'ubicacion',   label: 'ubicación',        icon: 'pin' },
   { id: 'reglamento',  label: 'reglamento',       icon: 'rules' },
   { id: 'desayuno',    label: 'desayuno',         icon: 'breakfast' },

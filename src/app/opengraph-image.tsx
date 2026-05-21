@@ -37,30 +37,30 @@ export default function Image() {
           <div style={{ fontSize: 48, fontWeight: 700, letterSpacing: '0.14em', color: '#1a3a4f', lineHeight: 1 }}>
             WELCOME
           </div>
-          
+
           <div style={{ display: 'flex', alignItems: 'center', gap: '20px', color: '#c79f5e' }}>
             <div style={{ width: 12, height: 12, backgroundColor: '#c79f5e', borderRadius: '50%' }} />
             <div style={{ width: 80, height: 2, backgroundColor: '#c79f5e' }} />
-            
+
             <div style={{ fontSize: 48, fontWeight: 700, letterSpacing: '0.14em', color: '#1a3a4f', lineHeight: 1 }}>
               SUITES
             </div>
-            
+
             <div style={{ width: 80, height: 2, backgroundColor: '#c79f5e' }} />
             <div style={{ width: 12, height: 12, backgroundColor: '#c79f5e', borderRadius: '50%' }} />
           </div>
-          
+
           <div style={{ fontSize: 18, fontWeight: 600, letterSpacing: '0.42em', color: '#1a3a4f', marginTop: 10 }}>
-            HOTEL
+            APART HOTEL
           </div>
         </div>
-        
+
         {/* Subtítulo decorativo abajo */}
         <div
-          style={{ 
-            marginTop: 100, 
-            fontSize: 36, 
-            fontStyle: 'italic', 
+          style={{
+            marginTop: 100,
+            fontSize: 36,
+            fontStyle: 'italic',
             color: '#c79f5e',
             display: 'flex',
             alignItems: 'center',

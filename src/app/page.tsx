@@ -8,7 +8,7 @@ export default function HomePage() {
     <div className="home">
       <header className="home-hero">
         <Monogram />
-        <h1 className="home-greet">Bienvenido a casa</h1>
+        <h1 className="home-greet">Bienvenido a tu hogar en Las Varillas</h1>
         <p className="home-sub">Tu guía digital. Todo lo que necesitás durante tu estadía, a un toque.</p>
       </header>
 

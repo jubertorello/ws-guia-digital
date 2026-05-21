@@ -20,8 +20,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ws-guia-digital.vercel.app'),
   title: 'Welcome Suites · Guía digital',
-  description: 'Tu guía digital de huésped para Welcome Suites Hotel, Las Varillas, Córdoba. WiFi, comodidades, desayuno, qué hacer y más.',
-  keywords: 'Welcome Suites, hotel, Las Varillas, Córdoba, guía, huésped',
+  description: 'Tu guía digital de huésped para Welcome Suites ApartHotel, Las Varillas, Córdoba. WiFi, comodidades, desayuno, qué hacer y más.',
+  keywords: 'Welcome Suites, apart hotel, Las Varillas, Córdoba, guía, huésped',
   openGraph: {
     title: 'Welcome Suites · Guía digital',
     description: 'Todo lo que necesitás durante tu estadía, a un toque.',

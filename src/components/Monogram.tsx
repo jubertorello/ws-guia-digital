@@ -19,7 +19,7 @@ export function Monogram({ small = false }: { small?: boolean }) {
           <path d="M0 1 L50 13 L100 1" fill="none" stroke="currentColor" strokeWidth="1" />
         </svg>
       </div>
-      <div className="mg-tag">HOTEL</div>
+      <div className="mg-tag">APART HOTEL</div>
     </div>
   );
 }

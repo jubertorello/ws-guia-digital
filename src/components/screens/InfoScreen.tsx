@@ -3,7 +3,7 @@ import { Lede, Card, Row, Bullets, SectionBlock } from '@/components/ui/blocks';
 export function InfoScreen() {
   return (
     <>
-      <Lede>Bienvenido a tu hogar en Las Varillas.</Lede>
+      <Lede>Por favor, lee la información atentamente.</Lede>
 
       <SectionBlock title="Cómo ingresar">
         <Bullets items={[
