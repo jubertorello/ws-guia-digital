@@ -7,7 +7,6 @@ export type SectionId =
   | 'reglamento'
   | 'desayuno'
   | 'comer'
-  | 'cafeterias'
   | 'bares'
   | 'hacer'
   | 'emergencias'
@@ -28,7 +27,6 @@ export const SECTIONS: SectionMeta[] = [
   { id: 'reglamento',  label: 'reglamento',       icon: 'rules' },
   { id: 'desayuno',    label: 'desayuno',         icon: 'breakfast' },
   { id: 'comer',       label: 'dónde comer',      icon: 'fork' },
-  { id: 'cafeterias',  label: 'cafeterías',       icon: 'coffee' },
   { id: 'bares',       label: 'bares',            icon: 'bar' },
   { id: 'hacer',       label: 'qué hacer',        icon: 'activity' },
   { id: 'emergencias', label: 'emergencias',      icon: 'emergency' },
@@ -44,7 +42,6 @@ export const SECTION_TITLES: Record<SectionId, string> = {
   reglamento:  'Reglamento',
   desayuno:    'Desayuno',
   comer:       'Dónde comer',
-  cafeterias:  'Cafeterías',
   bares:       'Bares',
   hacer:       'Qué hacer',
   emergencias: 'Emergencias',

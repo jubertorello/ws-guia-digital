@@ -34,6 +34,24 @@ export function ComerScreen() {
         </Card>
         <Action href="https://maps.google.com/?q=El+Patio+Las+Varillas" icon={Ic.pin} label="Ver El Patio en Maps" accent />
       </SectionBlock>
+
+      <SectionBlock title="Cafeterías y pastelerías">
+        <Card>
+          <Place name="Café del Centro" tag="Especialidad · tostadas" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Cafe+del+Centro+Las+Varillas" icon={Ic.pin} label="Ver Café del Centro en Maps" accent />
+
+        <Card>
+          <Place name="Almacén & Café" tag="Brunch · sin TACC" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Almacen+y+Cafe+Las+Varillas" icon={Ic.pin} label="Ver Almacén & Café en Maps" accent />
+
+        <Card>
+          <Place name="Donatella" tag="Pastelería" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Donatella+Las+Varillas" icon={Ic.pin} label="Ver Donatella en Maps" accent />
+      </SectionBlock>
+
       <p className="footnote">Si querés algo puntual (sin TACC, vegetariano, niños) escribinos y te pasamos opción.</p>
     </>
   );
