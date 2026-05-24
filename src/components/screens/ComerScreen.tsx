@@ -6,50 +6,78 @@ export function ComerScreen() {
   return (
     <>
       <Lede>Nuestras recomendaciones favoritas — probadas y queridas. Reservá con tiempo los viernes y sábados.</Lede>
-      <SectionBlock title="Para una buena comida">
+      <SectionBlock title="Lugares para comer">
         <Card>
-          <Place name="Gourmet" tag="Minutas · clásico" />
+          <Place name="Parribus El 22 (Gregorio)" />
         </Card>
-        <Action href="https://maps.google.com/?q=Gourmet+Las+Varillas" icon={Ic.pin} label="Ver Gourmet en Maps" accent />
+        <Action href="https://maps.google.com/?q=Parribus+El+22+Gregorio+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
         
         <Card>
-          <Place name="Don Felipe" tag="Pastas caseras" />
+          <Place name="Casa Jon" />
         </Card>
-        <Action href="https://maps.google.com/?q=Don+Felipe+Las+Varillas" icon={Ic.pin} label="Ver Don Felipe en Maps" accent />
+        <Action href="https://maps.google.com/?q=Casa+Jon+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
 
         <Card>
-          <Place name="Mediterráneo" tag="Cocina de autor" />
+          <Place name="Sushi Jon" />
         </Card>
-        <Action href="https://maps.google.com/?q=Mediterraneo+Las+Varillas" icon={Ic.pin} label="Ver Mediterráneo en Maps" accent />
+        <Action href="https://maps.google.com/?q=Sushi+Jon+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="La Martina" />
+        </Card>
+        <Action href="https://maps.google.com/?q=La+Martina+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="Valentino" tag="Miércoles a Domingo" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Valentino+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="El Castillo" />
+        </Card>
+        <Action href="https://maps.google.com/?q=El+Castillo+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="Bocatta" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Bocatta+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="VIP" />
+        </Card>
+        <Action href="https://maps.google.com/?q=VIP+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
       </SectionBlock>
-      
-      <SectionBlock title="Algo más informal">
-        <Card>
-          <Place name="Pizzería La Estación" tag="Pizza a la piedra" />
-        </Card>
-        <Action href="https://maps.google.com/?q=Pizzeria+La+Estacion+Las+Varillas" icon={Ic.pin} label="Ver La Estación en Maps" accent />
-        
-        <Card>
-          <Place name="El Patio" tag="Hamburguesas y picadas" />
-        </Card>
-        <Action href="https://maps.google.com/?q=El+Patio+Las+Varillas" icon={Ic.pin} label="Ver El Patio en Maps" accent />
-      </SectionBlock>
 
-      <SectionBlock title="Cafeterías y pastelerías">
+      <SectionBlock title="Cafeterías">
         <Card>
-          <Place name="Café del Centro" tag="Especialidad · tostadas" />
+          <Place name="El Fondito" />
         </Card>
-        <Action href="https://maps.google.com/?q=Cafe+del+Centro+Las+Varillas" icon={Ic.pin} label="Ver Café del Centro en Maps" accent />
+        <Action href="https://maps.google.com/?q=El+Fondito+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
 
         <Card>
-          <Place name="Almacén & Café" tag="Brunch · sin TACC" />
+          <Place name="Mayo" />
         </Card>
-        <Action href="https://maps.google.com/?q=Almacen+y+Cafe+Las+Varillas" icon={Ic.pin} label="Ver Almacén & Café en Maps" accent />
+        <Action href="https://maps.google.com/?q=Mayo+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
 
         <Card>
-          <Place name="Donatella" tag="Pastelería" />
+          <Place name="Al Rojo" />
         </Card>
-        <Action href="https://maps.google.com/?q=Donatella+Las+Varillas" icon={Ic.pin} label="Ver Donatella en Maps" accent />
+        <Action href="https://maps.google.com/?q=Al+Rojo+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="Panadería Salomone" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Panaderia+Salomone+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="Estación de Servicio Shell" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Estacion+de+Servicio+Shell+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="Estación de Servicio YPF" />
+        </Card>
+        <Action href="https://maps.google.com/?q=Estacion+de+Servicio+YPF+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
       </SectionBlock>
 
       <p className="footnote">Si querés algo puntual (sin TACC, vegetariano, niños) escribinos y te pasamos opción.</p>

@@ -25,7 +25,7 @@ export function EmergenciasScreen() {
       <SectionBlock title="Sanatorios y Guardias">
         <Card>
           <Place name="SANATORIO GARCES" tag="Guardia" note="La Rioja 150" dist="" />
-          <Place name="SANATORIO POLICLÍNICO" tag="Guardia" note="España 157" dist="" />
+          <Place name="SANATORIO POLICLÍNICO" tag="Guardia" note="Calle Belgrano" dist="" />
         </Card>
       </SectionBlock>
     </>
