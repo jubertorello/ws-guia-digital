@@ -7,6 +7,11 @@ export function ComerScreen() {
     <>
       <Lede>Nuestras recomendaciones favoritas — probadas y queridas. Reservá con tiempo los viernes y sábados.</Lede>
       <SectionBlock title="Lugares para comer">
+         <Card>
+          <Place name="El Gourmet (Café · Resto)" />
+        </Card>
+        <Action href="https://maps.app.goo.gl/ZNS9wcUL4HH3GuiF9" icon={Ic.pin} label="Ver en Maps" accent />
+        
         <Card>
           <Place name="Parribus El 22 (Gregorio)" />
         </Card>
