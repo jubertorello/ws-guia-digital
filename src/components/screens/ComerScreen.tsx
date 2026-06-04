@@ -85,6 +85,18 @@ export function ComerScreen() {
         <Action href="https://maps.google.com/?q=Estacion+de+Servicio+YPF+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
       </SectionBlock>
 
+      <SectionBlock title="Rotiserías (comida hecha)">
+        <Card>
+          <Place name="La Fonda" />
+        </Card>
+        <Action href="https://maps.google.com/?q=La+Fonda+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+
+        <Card>
+          <Place name="La Casa de las Canastitas" />
+        </Card>
+        <Action href="https://maps.google.com/?q=La+Casa+de+las+Canastitas+Las+Varillas" icon={Ic.pin} label="Ver en Maps" accent />
+      </SectionBlock>
+
       <p className="footnote">Si querés algo puntual (sin TACC, vegetariano, niños) escribinos y te pasamos opción.</p>
     </>
   );
