@@ -33,6 +33,14 @@ export const Ic: Record<string, React.ReactNode> = {
       <path d="M10 20v-5h4v5" />
     </svg>
   ),
+  safe: (
+    <svg {...common}>
+      <rect x="3.5" y="4.5" width="17" height="14" rx="1.5" />
+      <circle cx="12" cy="11.5" r="3" />
+      <path d="M12 8.5v1M12 13.5v1M9 11.5h1M14 11.5h1" />
+      <path d="M6.5 18.5v1.5M17.5 18.5v1.5" />
+    </svg>
+  ),
   alert: (
     <svg {...common}>
       <path d="M12 3.5 2.5 20h19L12 3.5Z" />

@@ -50,3 +50,28 @@ export function Place({
     </div>
   );
 }
+
+export function Steps({ items }: { items: { title: string; text: React.ReactNode }[] }) {
+  return (
+    <ol className="steps">
+      {items.map((s, i) => (
+        <li className="step" key={i}>
+          <span className="step-n">{i + 1}</span>
+          <div className="step-b">
+            <div className="step-t">{s.title}</div>
+            <div className="step-d">{s.text}</div>
+          </div>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+export function Note({ title, children }: { title: string; children: React.ReactNode }) {
+  return (
+    <aside className="note">
+      <div className="note-t">{title}</div>
+      <div className="note-d">{children}</div>
+    </aside>
+  );
+}

@@ -2,6 +2,7 @@ export type SectionId =
   | 'contacto'
   | 'wifi'
   | 'comodidades'
+  | 'caja'
   | 'info'
   | 'ubicacion'
   | 'reglamento'
@@ -23,6 +24,7 @@ export const SECTIONS: SectionMeta[] = [
   { id: 'contacto',    label: 'contacto',        icon: 'phone' },
   { id: 'wifi',        label: 'wifi',             icon: 'wifi' },
   { id: 'comodidades', label: 'comodidades',      icon: 'amenities' },
+  { id: 'caja',        label: 'caja de seguridad', icon: 'safe' },
   { id: 'ubicacion',   label: 'ubicación',        icon: 'pin' },
   { id: 'reglamento',  label: 'reglamento',       icon: 'rules' },
   { id: 'desayuno',    label: 'desayuno',         icon: 'breakfast' },
@@ -37,6 +39,7 @@ export const SECTION_TITLES: Record<SectionId, string> = {
   contacto:    'Contacto',
   wifi:        'WiFi',
   comodidades: 'Comodidades',
+  caja:        'Caja de seguridad',
   info:        'Info importante',
   ubicacion:   'Ubicación',
   reglamento:  'Reglamento',

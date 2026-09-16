@@ -1,14 +1,25 @@
 import { ImageResponse } from 'next/og';
+import { brandFonts, BRAND } from '@/lib/og-fonts';
 
-export const runtime = 'edge';
-export const alt = 'Welcome Suites · Guía digital';
-export const size = {
-  width: 1200,
-  height: 630,
-};
+export const alt = 'Welcome Suites Apart Hotel · Guía digital del huésped';
+export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default function Image() {
+const Chevron = ({ up }: { up?: boolean }) => (
+  <svg width="200" height="22" viewBox="0 0 200 22">
+    <path d={up ? 'M0 21 L100 1 L200 21' : 'M0 1 L100 21 L200 1'} fill="none" stroke={BRAND.gold} strokeWidth="1.5" />
+  </svg>
+);
+
+const Rule = ({ w = 70 }: { w?: number }) => (
+  <div style={{ width: w, height: 1.5, background: BRAND.gold }} />
+);
+
+const Dot = () => <div style={{ width: 9, height: 9, borderRadius: 9, background: BRAND.gold }} />;
+
+export default async function Image() {
+  const fonts = await brandFonts('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzáéíóúñ·');
+
   return new ImageResponse(
     (
       <div
@@ -16,66 +27,47 @@ export default function Image() {
           width: '100%',
           height: '100%',
           display: 'flex',
-          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: '#efe6d3', // var(--cream)
-          fontFamily: 'serif',
-          color: '#1a3a4f',
+          background: `radial-gradient(circle at 50% 38%, ${BRAND.navy} 0%, ${BRAND.navyDeep} 75%)`,
+          fontFamily: 'Cormorant Garamond',
+          color: BRAND.paper,
         }}
       >
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            gap: '20px',
-            transform: 'scale(1.5)', // Hacemos el logo un poco más grande
-          }}
-        >
-          {/* Logo WS recreado con divs e inline styles */}
-          <div style={{ fontSize: 48, fontWeight: 700, letterSpacing: '0.14em', color: '#1a3a4f', lineHeight: 1 }}>
+        {/* Double gold frame */}
+        <div style={{ position: 'absolute', top: 28, left: 28, right: 28, bottom: 28, border: `1.5px solid ${BRAND.goldSoft}`, display: 'flex' }} />
+        <div style={{ position: 'absolute', top: 38, left: 38, right: 38, bottom: 38, border: `1px solid rgba(199,159,94,0.25)`, display: 'flex' }} />
+
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <Chevron up />
+          <div style={{ fontSize: 84, fontWeight: 600, letterSpacing: 18, marginTop: 14, lineHeight: 1, paddingLeft: 18 }}>
             WELCOME
           </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: '20px', color: '#c79f5e' }}>
-            <div style={{ width: 12, height: 12, backgroundColor: '#c79f5e', borderRadius: '50%' }} />
-            <div style={{ width: 80, height: 2, backgroundColor: '#c79f5e' }} />
-
-            <div style={{ fontSize: 48, fontWeight: 700, letterSpacing: '0.14em', color: '#1a3a4f', lineHeight: 1 }}>
-              SUITES
-            </div>
-
-            <div style={{ width: 80, height: 2, backgroundColor: '#c79f5e' }} />
-            <div style={{ width: 12, height: 12, backgroundColor: '#c79f5e', borderRadius: '50%' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginTop: 14 }}>
+            <Dot />
+            <Rule />
+            <div style={{ fontSize: 84, fontWeight: 600, letterSpacing: 18, lineHeight: 1, paddingLeft: 18 }}>SUITES</div>
+            <Rule />
+            <Dot />
           </div>
-
-          <div style={{ fontSize: 18, fontWeight: 600, letterSpacing: '0.42em', color: '#1a3a4f', marginTop: 10 }}>
+          <div style={{ marginTop: 14, display: 'flex' }}>
+            <Chevron />
+          </div>
+          <div style={{ fontFamily: 'Inter', fontSize: 18, fontWeight: 500, letterSpacing: 10, marginTop: 20, color: BRAND.gold, paddingLeft: 10 }}>
             APART HOTEL
           </div>
-        </div>
 
-        {/* Subtítulo decorativo abajo */}
-        <div
-          style={{
-            marginTop: 100,
-            fontSize: 36,
-            fontStyle: 'italic',
-            color: '#c79f5e',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '20px',
-            fontWeight: 500,
-          }}
-        >
-          <div style={{ width: 80, height: 2, backgroundColor: '#c79f5e' }} />
-          guía digital
-          <div style={{ width: 80, height: 2, backgroundColor: '#c79f5e' }} />
+          <div style={{ display: 'flex', alignItems: 'center', gap: 24, marginTop: 48 }}>
+            <Rule w={60} />
+            <div style={{ fontSize: 50, fontStyle: 'italic', fontWeight: 500, color: BRAND.paper }}>Guía digital</div>
+            <Rule w={60} />
+          </div>
+          <div style={{ fontFamily: 'Inter', fontSize: 20, fontWeight: 500, letterSpacing: 4, marginTop: 10, color: 'rgba(250,245,232,0.6)' }}>
+            Las Varillas · Córdoba
+          </div>
         </div>
       </div>
     ),
-    {
-      ...size,
-    }
+    { ...size, fonts },
   );
 }

@@ -20,20 +20,25 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://ws-guia-digital.vercel.app'),
   title: 'Welcome Suites · Guía digital',
-  description: 'Tu guía digital de huésped para Welcome Suites ApartHotel, Las Varillas, Córdoba. WiFi, comodidades, desayuno, qué hacer y más.',
-  keywords: 'Welcome Suites, apart hotel, Las Varillas, Córdoba, guía, huésped',
+  description: 'Guía digital del huésped de Welcome Suites Apart Hotel, en Las Varillas, Córdoba. WiFi, comodidades, desayuno, dónde comer, qué hacer y más.',
+  keywords: ['Welcome Suites', 'apart hotel', 'Las Varillas', 'Córdoba', 'guía del huésped'],
+  applicationName: 'Welcome Suites',
+  appleWebApp: {
+    title: 'Welcome Suites',
+    statusBarStyle: 'black-translucent',
+  },
   openGraph: {
     title: 'Welcome Suites · Guía digital',
-    description: 'Todo lo que necesitás durante tu estadía, a un toque.',
-    url: 'https://ws-guia-digital.vercel.app',
-    siteName: 'Welcome Suites',
+    description: 'Bienvenido a tu hogar en Las Varillas. Todo lo que necesitás durante tu estadía, a un toque.',
+    url: '/',
+    siteName: 'Welcome Suites Apart Hotel',
     locale: 'es_AR',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Welcome Suites · Guía digital',
-    description: 'Todo lo que necesitás durante tu estadía, a un toque.',
+    description: 'Bienvenido a tu hogar en Las Varillas. Todo lo que necesitás durante tu estadía, a un toque.',
   },
 };
 

@@ -7,6 +7,7 @@ import { DetailLayout } from '@/components/DetailLayout';
 import { ContactoScreen }    from '@/components/screens/ContactoScreen';
 import { WifiScreen }        from '@/components/screens/WifiScreen';
 import { ComodidadesScreen } from '@/components/screens/ComodidadesScreen';
+import { CajaScreen }        from '@/components/screens/CajaScreen';
 import { InfoScreen }        from '@/components/screens/InfoScreen';
 import { UbicacionScreen }   from '@/components/screens/UbicacionScreen';
 import { ReglamentoScreen }  from '@/components/screens/ReglamentoScreen';
@@ -21,6 +22,7 @@ const SCREENS: Record<string, React.ComponentType> = {
   contacto:    ContactoScreen,
   wifi:        WifiScreen,
   comodidades: ComodidadesScreen,
+  caja:        CajaScreen,
   info:        InfoScreen,
   ubicacion:   UbicacionScreen,
   reglamento:  ReglamentoScreen,
