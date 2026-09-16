@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import { SECTION_TITLES, SECTIONS } from '@/lib/sections';
 import { DetailLayout } from '@/components/DetailLayout';
 
@@ -41,17 +41,20 @@ export function generateStaticParams() {
 
 // ── Metadata per section ─────────────────────────────────────────
 export async function generateMetadata(
-  { params }: { params: Promise<{ section: string }> }
+  { params }: { params: Promise<{ section: string }> },
+  parent: ResolvingMetadata
 ): Promise<Metadata> {
   const { section } = await params;
   const title = SECTION_TITLES[section as keyof typeof SECTION_TITLES];
   if (!title) return {};
   const full = `${title} · Welcome Suites`;
+  // openGraph/twitter objects replace the parent's, so carry its image over
+  const { openGraph, twitter } = await parent;
   return {
     title: full,
     alternates: { canonical: `/${section}` },
-    openGraph: { title: full, url: `/${section}` },
-    twitter: { title: full },
+    openGraph: { ...openGraph, title: full, url: `/${section}` },
+    twitter: { ...twitter, title: full },
   };
 }
 
