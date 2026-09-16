@@ -20,19 +20,19 @@ export interface SectionMeta {
 }
 
 export const SECTIONS: SectionMeta[] = [
-  { id: 'info',        label: 'info importante',  icon: 'alert' },
-  { id: 'contacto',    label: 'contacto',        icon: 'phone' },
-  { id: 'wifi',        label: 'wifi',             icon: 'wifi' },
-  { id: 'comodidades', label: 'comodidades',      icon: 'amenities' },
+  { id: 'info',        label: 'info importante',   icon: 'alert' },
+  { id: 'contacto',    label: 'contacto',          icon: 'phone' },
+  { id: 'wifi',        label: 'wifi',              icon: 'wifi' },
+  { id: 'comodidades', label: 'comodidades',       icon: 'amenities' },
   { id: 'caja',        label: 'caja de seguridad', icon: 'safe' },
-  { id: 'ubicacion',   label: 'ubicación',        icon: 'pin' },
-  { id: 'reglamento',  label: 'reglamento',       icon: 'rules' },
-  { id: 'desayuno',    label: 'desayuno',         icon: 'breakfast' },
-  { id: 'comer',       label: 'dónde comer',      icon: 'fork' },
-  { id: 'bares',       label: 'bares',            icon: 'bar' },
-  { id: 'hacer',       label: 'qué hacer',        icon: 'activity' },
-  { id: 'emergencias', label: 'emergencias',      icon: 'emergency' },
-  { id: 'checkout',    label: 'antes de irte',    icon: 'key' },
+  { id: 'ubicacion',   label: 'ubicación',         icon: 'pin' },
+  { id: 'desayuno',    label: 'desayuno',          icon: 'breakfast' },
+  { id: 'comer',       label: 'dónde comer',       icon: 'fork' },
+  { id: 'bares',       label: 'bares',             icon: 'bar' },
+  { id: 'hacer',       label: 'qué hacer',         icon: 'activity' },
+  { id: 'reglamento',  label: 'reglamento',        icon: 'rules' },
+  { id: 'emergencias', label: 'emergencias',       icon: 'emergency' },
+  { id: 'checkout',    label: 'antes de irte',     icon: 'key' },
 ];
 
 export const SECTION_TITLES: Record<SectionId, string> = {

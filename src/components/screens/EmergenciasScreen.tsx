@@ -11,9 +11,9 @@ export function EmergenciasScreen() {
         <Action href="tel:+5493533454096" icon={Ic.phone} label="Andrea" sub="+54 9 3533 45-4096" accent />
       </SectionBlock>
       <SectionBlock title="Área Protegida">
-        <div style={{ padding: '0 0 1rem 0', color: 'var(--text-soft)', fontSize: '0.95rem' }}>
-          El alojamiento cuenta con servicio de <strong>Emergencias médicas ÁREA PROTEGIDA EMMA</strong>.
-        </div>
+        <p className="screen-note">
+          El alojamiento cuenta con servicio de <strong>emergencias médicas Área Protegida EMMA</strong>.
+        </p>
         <Action href="tel:3533421000" icon={Ic.phone} label="Llamar a EMMA" sub="3533-421000" accent />
       </SectionBlock>
       <SectionBlock title="Otros servicios">

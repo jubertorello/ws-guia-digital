@@ -46,8 +46,12 @@ export async function generateMetadata(
   const { section } = await params;
   const title = SECTION_TITLES[section as keyof typeof SECTION_TITLES];
   if (!title) return {};
+  const full = `${title} · Welcome Suites`;
   return {
-    title: `${title} · Welcome Suites`,
+    title: full,
+    alternates: { canonical: `/${section}` },
+    openGraph: { title: full, url: `/${section}` },
+    twitter: { title: full },
   };
 }
 
