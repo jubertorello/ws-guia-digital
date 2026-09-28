@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   applicationName: 'Welcome Suites',
   appleWebApp: {
     title: 'Welcome Suites',
-    statusBarStyle: 'black-translucent',
+    statusBarStyle: 'default', // texto oscuro sobre el crema
   },
   openGraph: {
     title: 'Welcome Suites · Guía digital',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#1a3a4f',
+  themeColor: '#efe6d3', // igual que el fondo crema de la guía
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
