@@ -5,7 +5,6 @@ export type SectionId =
   | 'caja'
   | 'info'
   | 'ubicacion'
-  | 'reglamento'
   | 'desayuno'
   | 'comer'
   | 'bares'
@@ -20,7 +19,7 @@ export interface SectionMeta {
 }
 
 export const SECTIONS: SectionMeta[] = [
-  { id: 'info',        label: 'info importante',   icon: 'alert' },
+  { id: 'info',        label: 'check-in',          icon: 'alert' },
   { id: 'contacto',    label: 'contacto',          icon: 'phone' },
   { id: 'wifi',        label: 'wifi',              icon: 'wifi' },
   { id: 'comodidades', label: 'comodidades',       icon: 'amenities' },
@@ -30,9 +29,8 @@ export const SECTIONS: SectionMeta[] = [
   { id: 'comer',       label: 'dónde comer',       icon: 'fork' },
   { id: 'bares',       label: 'bares',             icon: 'bar' },
   { id: 'hacer',       label: 'qué hacer',         icon: 'activity' },
-  { id: 'reglamento',  label: 'reglamento',        icon: 'rules' },
   { id: 'emergencias', label: 'emergencias',       icon: 'emergency' },
-  { id: 'checkout',    label: 'antes de irte',     icon: 'key' },
+  { id: 'checkout',    label: 'check-out',         icon: 'key' },
 ];
 
 export const SECTION_TITLES: Record<SectionId, string> = {
@@ -40,13 +38,12 @@ export const SECTION_TITLES: Record<SectionId, string> = {
   wifi:        'WiFi',
   comodidades: 'Comodidades',
   caja:        'Caja de seguridad',
-  info:        'Info importante',
+  info:        'Check-in',
   ubicacion:   'Ubicación',
-  reglamento:  'Reglamento',
   desayuno:    'Desayuno',
   comer:       'Dónde comer',
   bares:       'Bares',
   hacer:       'Qué hacer',
   emergencias: 'Emergencias',
-  checkout:    'Antes de irte',
+  checkout:    'Check-out',
 };

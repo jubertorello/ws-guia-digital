@@ -20,6 +20,14 @@ export function WifiScreen() {
           <CopyField label="Contraseña" value="Wlc_Suites23" />
         </Card>
       </SectionBlock>
+      <SectionBlock title="Planta baja C">
+        <Card className="wifi-card">
+          <div className="wifi-mark">{Ic.wifi}</div>
+          <CopyField label="Red" value="Tenda_33C6D0" mono={false} />
+          <CopyField label="Contraseña" value="PlantabajaC" />
+        </Card>
+        <p className="screen-note">Esta red es exclusiva del apart <strong>Planta baja C</strong>.</p>
+      </SectionBlock>
       <p className="footnote">Si la señal se corta, intentá la otra red — están en distintos sectores del edificio.</p>
     </>
   );

@@ -41,6 +41,11 @@ export const Ic: Record<string, React.ReactNode> = {
       <path d="M6.5 18.5v1.5M17.5 18.5v1.5" />
     </svg>
   ),
+  star: (
+    <svg {...common}>
+      <path d="m12 4 2.5 5.2 5.5.8-4 3.9 1 5.6-5-2.7-5 2.7 1-5.6-4-3.9 5.5-.8L12 4Z" />
+    </svg>
+  ),
   alert: (
     <svg {...common}>
       <path d="M12 3.5 2.5 20h19L12 3.5Z" />

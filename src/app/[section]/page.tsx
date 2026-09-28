@@ -10,7 +10,6 @@ import { ComodidadesScreen } from '@/components/screens/ComodidadesScreen';
 import { CajaScreen }        from '@/components/screens/CajaScreen';
 import { InfoScreen }        from '@/components/screens/InfoScreen';
 import { UbicacionScreen }   from '@/components/screens/UbicacionScreen';
-import { ReglamentoScreen }  from '@/components/screens/ReglamentoScreen';
 import { DesayunoScreen }    from '@/components/screens/DesayunoScreen';
 import { ComerScreen }       from '@/components/screens/ComerScreen';
 import { BaresScreen }       from '@/components/screens/BaresScreen';
@@ -25,7 +24,6 @@ const SCREENS: Record<string, React.ComponentType> = {
   caja:        CajaScreen,
   info:        InfoScreen,
   ubicacion:   UbicacionScreen,
-  reglamento:  ReglamentoScreen,
   desayuno:    DesayunoScreen,
   comer:       ComerScreen,
   bares:       BaresScreen,

@@ -1,5 +1,9 @@
 import { Lede, Card, Row, Bullets, SectionBlock } from '@/components/ui/blocks';
 
+// Abre el formulario de reseña de la ficha de Google (!12e1)
+export const REVIEW_URL =
+  'https://www.google.com/maps/place//data=!4m3!3m2!1s0x95cb65402a42ef87:0xd20e966fb3732b4b!12e1';
+
 export function CheckoutScreen() {
   return (
     <>
@@ -26,9 +30,9 @@ export function CheckoutScreen() {
       <SectionBlock title="Una última cosa">
         <Card className="thanks">
           <div className="thanks-q">¿Cómo estuvo todo?</div>
-          <p className="thanks-p">Si la pasaste bien, una reseña en Google nos ayuda muchísimo. Y si algo se puede mejorar, escribinos directo — preferimos saberlo.</p>
+          <p className="thanks-p">Si la pasaste bien, una reseña en Google nos ayuda muchísimo — te lleva menos de un minuto. Y si algo se puede mejorar, escribinos directo: preferimos saberlo.</p>
           <div className="thanks-cta">
-            <a className="btn-gold" href="https://maps.app.goo.gl/ntGj4vDR8bnyXHz68" target="_blank" rel="noopener noreferrer">Dejar reseña</a>
+            <a className="btn-gold" href={REVIEW_URL} target="_blank" rel="noopener noreferrer">Dejar una reseña en Google</a>
           </div>
         </Card>
       </SectionBlock>

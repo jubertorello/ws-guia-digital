@@ -123,13 +123,6 @@ body {
   letter-spacing: 0.005em;
   font-style: italic;
 }
-.home-sub {
-  font-size: 13.5px;
-  line-height: 1.55;
-  color: var(--ink-2);
-  margin: 0 auto;
-  max-width: 30ch;
-}
 
 .home-title {
   font-family: var(--serif);
@@ -221,6 +214,24 @@ body {
   color: var(--ink-3);
 }
 .hf-rule { width: 60px; height: 1px; background: var(--gold); opacity: 0.6; }
+.hf-review {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 9px 16px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  color: var(--navy);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.hf-review:hover { background: rgba(199, 159, 94, 0.14); }
+.hf-review-i { width: 16px; height: 16px; display: inline-flex; color: var(--gold-2); }
+.hf-review-i svg { width: 100%; height: 100%; }
+
 .hf-text {
   font-family: var(--serif);
   font-style: italic;
